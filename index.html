@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Oswald:wght@200..700&family=Song+Myung&display=swap');
+
+        * {
+            font-family: "Song Myung", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">최고 평점 영화 리스트</h1>
+    </header>
+    <form class="search">
+        <label>영화검색: </label>
+        <input type="text" id="search-input" placeholder="영화제목을 검색해보세요">
+        <button type="submit" id="search-button">검색</button>
+    </form>
+    <section id=movie-card class="card-List">
+        <div id="movie-container"></div>
+    </section>
+    <script src="./movie.js"></script>
+</body>
+
+</html>
