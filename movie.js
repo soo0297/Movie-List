@@ -47,10 +47,11 @@ function createMovieCard(movie) {
 
 // 카드제목 검색 기능
 document.getElementById('search-button').addEventListener('click', () => {
-    const query = document.getElementById('search-input').value.toLowerCase();
     const movieCards = document.querySelectorAll('.movie-card');
+
     movieCards.forEach(card => {
         const title = card.querySelector('h3').textContent.toLowerCase();
+        const query = document.getElementById('search-input').value.toLowerCase();
         if (title.includes(query)) {
             card.style.display = 'block';
         } else {
